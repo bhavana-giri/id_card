@@ -72,48 +72,52 @@ export default function Home() {
               </div> */}
               
               {/* Links Section */}
-              <div className="mt-6 space-y-3">
+              <div className="mt-6 space-y-2.5">
                 {/* First Row - LinkedIn and Google Slides */}
-                <div className="flex gap-3 justify-center">
+                <div className="flex flex-col gap-2.5">
                   <a
                     href="https://www.linkedin.com/in/bhavana-anant-giri-0a43109b/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+                    className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
                     aria-label="LinkedIn"
                   >
                     <Linkedin className="w-5 h-5 text-[#0077B5]" fill="#0077B5" />
+                    <span className="text-xs font-medium text-black">LinkedIn</span>
                   </a>
                   <a
                     href="https://docs.google.com/presentation/d/1lXcHuubEWki5P3HdlZefajCP_dGY5D97sSH3iFN4B3w/edit?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+                    className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
                     aria-label="Google Slides"
                   >
                     <Presentation className="w-5 h-5 text-[#F4B400]" fill="#F4B400" />
+                    <span className="text-xs font-medium text-black">Google Slides</span>
                   </a>
                 </div>
                 
                 {/* Second Row - GitHub Repos */}
-                <div className="flex gap-3 justify-center">
+                <div className="flex flex-col gap-2.5">
                   <a
                     href="https://github.com/redis/agent-memory-server/tree/main"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+                    className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
                     aria-label="Agent Memory Server"
                   >
                     <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
+                    <span className="text-xs font-medium text-black">Agent Memory Server</span>
                   </a>
                   <a
                     href="https://github.com/redis-developer/dealership-chatbot-agent-memory-demo"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+                    className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
                     aria-label="Demo Repo"
                   >
                     <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
+                    <span className="text-xs font-medium text-black">Demo Repo</span>
                   </a>
                 </div>
               </div>
