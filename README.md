@@ -1,10 +1,9 @@
-# ID Card - Redis Employee
+# ID Card/Business card
 
-A single-page Next.js application displaying an ID card for a Redis employee.
+A single-page Next.js application displaying a card with user details
 
 ## Features
 
-- Modern ID card design with Redis branding (red color)
 - Responsive layout (full view on mobile, centered on desktop)
 - Social media links (YouTube, LinkedIn, GitHub)
 - Built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui
