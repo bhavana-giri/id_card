@@ -1,6 +1,6 @@
 "use client";
 
-import { Youtube, Linkedin, Github } from "lucide-react";
+import { Linkedin, Github, Presentation } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -71,35 +71,51 @@ export default function Home() {
                 </div>
               </div> */}
               
-              {/* Social Media Links */}
-              <div className="flex gap-4 justify-center mt-6">
-                <a
-                  href="https://www.youtube.com/c/redisinc"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
-                  aria-label="YouTube"
-                >
-                  <Youtube className="w-5 h-5 text-[#FF0000]" fill="#FFFFFF" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/bhavana-anant-giri-0a43109b/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-5 h-5 text-[#0077B5]" fill="#0077B5" />
-                </a>
-                <a
-                  href="https://github.com/redis-developer/reduce-llm-calls-with-vector-search"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
-                  aria-label="GitHub"
-                >
-                  <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
-                </a>
+              {/* Links Section */}
+              <div className="mt-6 space-y-3">
+                {/* First Row - LinkedIn and Google Slides */}
+                <div className="flex gap-3 justify-center">
+                  <a
+                    href="https://www.linkedin.com/in/bhavana-anant-giri-0a43109b/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin className="w-5 h-5 text-[#0077B5]" fill="#0077B5" />
+                  </a>
+                  <a
+                    href="https://docs.google.com/presentation/d/1lXcHuubEWki5P3HdlZefajCP_dGY5D97sSH3iFN4B3w/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+                    aria-label="Google Slides"
+                  >
+                    <Presentation className="w-5 h-5 text-[#F4B400]" fill="#F4B400" />
+                  </a>
+                </div>
+                
+                {/* Second Row - GitHub Repos */}
+                <div className="flex gap-3 justify-center">
+                  <a
+                    href="https://github.com/redis/agent-memory-server/tree/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+                    aria-label="Agent Memory Server"
+                  >
+                    <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
+                  </a>
+                  <a
+                    href="https://github.com/redis-developer/dealership-chatbot-agent-memory-demo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+                    aria-label="Demo Repo"
+                  >
+                    <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
