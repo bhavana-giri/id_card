@@ -3,6 +3,21 @@
 import { Linkedin, Github, Presentation } from "lucide-react";
 import Image from "next/image";
 
+async function trackClick(linkId: string) {
+  try {
+    await fetch('/api/track-click', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ linkId }),
+    });
+  } catch (error) {
+    // Silently fail - don't interrupt user experience
+    console.error('Failed to track click:', error);
+  }
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-black flex items-center justify-center p-4 md:p-8 lg:p-16">
@@ -79,6 +94,7 @@ export default function Home() {
                     href="https://www.linkedin.com/in/bhavana-anant-giri-0a43109b/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackClick('linkedin')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
                     aria-label="LinkedIn"
                   >
@@ -89,11 +105,12 @@ export default function Home() {
                     href="https://docs.google.com/presentation/d/1lXcHuubEWki5P3HdlZefajCP_dGY5D97sSH3iFN4B3w/edit?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackClick('slide-deck')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Google Slides"
+                    aria-label="Slide Deck"
                   >
                     <Presentation className="w-5 h-5 text-[#F4B400]" fill="#F4B400" />
-                    <span className="text-xs font-medium text-black">Google Slides</span>
+                    <span className="text-xs font-medium text-black">Slide Deck</span>
                   </a>
                 </div>
                 
@@ -103,6 +120,7 @@ export default function Home() {
                     href="https://github.com/redis/agent-memory-server/tree/main"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackClick('agent-memory-server')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
                     aria-label="Agent Memory Server"
                   >
@@ -113,6 +131,7 @@ export default function Home() {
                     href="https://github.com/redis-developer/dealership-chatbot-agent-memory-demo"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackClick('demo-repo')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
                     aria-label="Demo Repo"
                   >
