@@ -102,22 +102,22 @@ export default function Home() {
                     <span className="text-xs font-medium text-black">LinkedIn</span>
                   </a>
                   <a
-                    href="https://docs.google.com/presentation/d/1lXcHuubEWki5P3HdlZefajCP_dGY5D97sSH3iFN4B3w/edit?usp=sharing"
+                    href="https://university.redis.io/academy"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackClick('slide-deck')}
+                    onClick={() => trackClick('redis-university')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Slide Deck"
+                    aria-label="Redis University"
                   >
                     <Presentation className="w-5 h-5 text-[#F4B400]" fill="#F4B400" />
-                    <span className="text-xs font-medium text-black">Slide Deck</span>
+                    <span className="text-xs font-medium text-black">Redis University</span>
                   </a>
                 </div>
                 
                 {/* Second Row - GitHub Repos */}
                 <div className="flex flex-col gap-2.5">
                   <a
-                    href="https://github.com/redis/agent-memory-server/tree/main"
+                    href="https://redis.github.io/agent-memory-server/"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackClick('agent-memory-server')}
