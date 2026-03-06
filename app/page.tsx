@@ -133,10 +133,10 @@ export default function Home() {
                     rel="noopener noreferrer"
                     onClick={() => trackClick('demo-repo')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Demo Repo"
+                    aria-label="Demo Repository"
                   >
                     <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
-                    <span className="text-xs font-medium text-black">Demo Repo</span>
+                    <span className="text-xs font-medium text-black">Demo Repository</span>
                   </a>
                 </div>
               </div>
