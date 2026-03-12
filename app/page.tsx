@@ -110,27 +110,22 @@ export default function Home() {
                     aria-label="Slides URL"
                   >
                     <Presentation className="w-5 h-5 text-[#F4B400]" fill="#F4B400" />
-                    <div className="flex flex-col leading-tight">
-                      <span className="text-xs font-medium text-black">Slides URL</span>
-                      <span className="text-[10px] text-gray-600 break-all">
-                        docs.google.com/presentation/d/1rAPCHKBXErpYqJzLuxV-ma-FvqsUkBnCXhh-sqlePic
-                      </span>
-                    </div>
+                    <span className="text-xs font-medium text-black">Slides URL</span>
                   </a>
                 </div>
                 
                 {/* Second Row - GitHub Repos */}
                 <div className="flex flex-col gap-2.5">
                   <a
-                    href="https://redis.github.io/agent-memory-server/"
+                    href="https://docs.redisvl.com/en/0.4.1/user_guide/03_llmcache.html"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackClick('agent-memory-server')}
+                    onClick={() => trackClick('redisvl-semantic-cache-docs')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Agent Memory Server"
+                    aria-label="RedisVL Semantic Cache Docs"
                   >
-                    <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
-                    <span className="text-xs font-medium text-black">Agent Memory Server</span>
+                    <Presentation className="w-5 h-5 text-[#DC382D]" fill="#DC382D" />
+                    <span className="text-xs font-medium text-black">RedisVL Semantic Cache Docs</span>
                   </a>
                   <a
                     href="https://github.com/bhavana-giri/movie-recommender-rag-semantic-cache-workshop"
@@ -141,12 +136,7 @@ export default function Home() {
                     aria-label="Demo URL"
                   >
                     <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
-                    <div className="flex flex-col leading-tight">
-                      <span className="text-xs font-medium text-black">Demo URL</span>
-                      <span className="text-[10px] text-gray-600 break-all">
-                        github.com/bhavana-giri/movie-recommender-rag-semantic-cache-workshop
-                      </span>
-                    </div>
+                    <span className="text-xs font-medium text-black">Demo URL</span>
                   </a>
                 </div>
               </div>
