@@ -102,15 +102,20 @@ export default function Home() {
                     <span className="text-xs font-medium text-black">LinkedIn</span>
                   </a>
                   <a
-                    href="https://university.redis.io/academy"
+                    href="https://docs.google.com/presentation/d/1rAPCHKBXErpYqJzLuxV-ma-FvqsUkBnCXhh-sqlePic/edit?slide=id.g3b75ce68545_2_9787#slide=id.g3b75ce68545_2_9787"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackClick('redis-university')}
+                    onClick={() => trackClick('slides-url')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Redis University"
+                    aria-label="Slides URL"
                   >
                     <Presentation className="w-5 h-5 text-[#F4B400]" fill="#F4B400" />
-                    <span className="text-xs font-medium text-black">Redis University</span>
+                    <div className="flex flex-col leading-tight">
+                      <span className="text-xs font-medium text-black">Slides URL</span>
+                      <span className="text-[10px] text-gray-600 break-all">
+                        docs.google.com/presentation/d/1rAPCHKBXErpYqJzLuxV-ma-FvqsUkBnCXhh-sqlePic
+                      </span>
+                    </div>
                   </a>
                 </div>
                 
@@ -128,15 +133,20 @@ export default function Home() {
                     <span className="text-xs font-medium text-black">Agent Memory Server</span>
                   </a>
                   <a
-                    href="https://github.com/redis-developer/dealership-chatbot-agent-memory-demo"
+                    href="https://github.com/bhavana-giri/movie-recommender-rag-semantic-cache-workshop"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackClick('demo-repo')}
+                    onClick={() => trackClick('demo-url')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Demo Repository"
+                    aria-label="Demo URL"
                   >
                     <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
-                    <span className="text-xs font-medium text-black">Demo Repository</span>
+                    <div className="flex flex-col leading-tight">
+                      <span className="text-xs font-medium text-black">Demo URL</span>
+                      <span className="text-[10px] text-gray-600 break-all">
+                        github.com/bhavana-giri/movie-recommender-rag-semantic-cache-workshop
+                      </span>
+                    </div>
                   </a>
                 </div>
               </div>
