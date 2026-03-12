@@ -107,10 +107,10 @@ export default function Home() {
                     rel="noopener noreferrer"
                     onClick={() => trackClick('slides-url')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Slides URL"
+                    aria-label="Slides"
                   >
                     <Presentation className="w-5 h-5 text-[#F4B400]" fill="#F4B400" />
-                    <span className="text-xs font-medium text-black">Slides URL</span>
+                    <span className="text-xs font-medium text-black">Slides</span>
                   </a>
                 </div>
                 
@@ -122,10 +122,16 @@ export default function Home() {
                     rel="noopener noreferrer"
                     onClick={() => trackClick('redisvl-semantic-cache-docs')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="RedisVL Semantic Cache Docs"
+                    aria-label="RedisVL Semantic Cache"
                   >
-                    <Presentation className="w-5 h-5 text-[#DC382D]" fill="#DC382D" />
-                    <span className="text-xs font-medium text-black">RedisVL Semantic Cache Docs</span>
+                    <Image
+                      src="/redis-logo.svg"
+                      alt="Redis logo"
+                      width={20}
+                      height={20}
+                      className="w-5 h-5"
+                    />
+                    <span className="text-xs font-medium text-black">RedisVL Semantic Cache</span>
                   </a>
                   <a
                     href="https://github.com/bhavana-giri/movie-recommender-rag-semantic-cache-workshop"
@@ -133,10 +139,10 @@ export default function Home() {
                     rel="noopener noreferrer"
                     onClick={() => trackClick('demo-url')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Demo URL"
+                    aria-label="Demo Repository"
                   >
                     <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
-                    <span className="text-xs font-medium text-black">Demo URL</span>
+                    <span className="text-xs font-medium text-black">Demo Repository</span>
                   </a>
                 </div>
               </div>
