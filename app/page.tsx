@@ -70,11 +70,8 @@ export default function Home() {
               </h1>
 
               {/* Title */}
-              <p className="text-gray-500 text-sm mb-2 text-center font-normal">
+              <p className="text-gray-500 text-sm mb-6 text-center font-normal">
                 Developer Advocate
-              </p>
-              <p className="text-[#DC382D] text-xs mb-6 text-center font-semibold uppercase tracking-[0.18em]">
-                Fraud Detection Systems
               </p>
 
               {/* Bottom Info */}
