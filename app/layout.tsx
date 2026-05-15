@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ID Card - Redis Employee",
-  description: "Redis Employee ID Card",
+  title: "Bhavana Giri - Fraud Detection Demo",
+  description: "Talk links for How Fraud Detection Systems Really Work",
 };
 
 export default function RootLayout({

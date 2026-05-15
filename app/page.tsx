@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin, Github, Presentation } from "lucide-react";
+import { Database, Github, Linkedin, Presentation } from "lucide-react";
 import Image from "next/image";
 
 async function trackClick(linkId: string) {
@@ -70,8 +70,11 @@ export default function Home() {
               </h1>
 
               {/* Title */}
-              <p className="text-gray-500 text-sm mb-6 text-center font-normal">
+              <p className="text-gray-500 text-sm mb-2 text-center font-normal">
                 Developer Advocate
+              </p>
+              <p className="text-[#DC382D] text-xs mb-6 text-center font-semibold uppercase tracking-[0.18em]">
+                Fraud Detection Systems
               </p>
 
               {/* Bottom Info */}
@@ -102,47 +105,41 @@ export default function Home() {
                     <span className="text-xs font-medium text-black">LinkedIn</span>
                   </a>
                   <a
-                    href="https://docs.google.com/presentation/d/1rAPCHKBXErpYqJzLuxV-ma-FvqsUkBnCXhh-sqlePic/edit?slide=id.g3b75ce68545_2_9787#slide=id.g3b75ce68545_2_9787"
+                    href="https://docs.google.com/presentation/d/107JUeJsgjbw3Ud7hwtUpOfUVby41vyKm/edit?slide=id.p1#slide=id.p1"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackClick('slides-url')}
+                    onClick={() => trackClick('fraud-detection-slides')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Slides"
+                    aria-label="Fraud detection slides"
                   >
                     <Presentation className="w-5 h-5 text-[#F4B400]" fill="#F4B400" />
-                    <span className="text-xs font-medium text-black">Slides</span>
+                    <span className="text-xs font-medium text-black">Fraud Detection Slides</span>
                   </a>
                 </div>
                 
                 {/* Second Row - GitHub Repos */}
                 <div className="flex flex-col gap-2.5">
                   <a
-                    href="https://docs.redisvl.com/en/0.4.1/user_guide/03_llmcache.html"
+                    href="https://featureform.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackClick('redisvl-semantic-cache-docs')}
+                    onClick={() => trackClick('featureform')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="RedisVL Semantic Cache"
+                    aria-label="Featureform"
                   >
-                    <Image
-                      src="/redis-logo.svg"
-                      alt="Redis logo"
-                      width={20}
-                      height={20}
-                      className="w-5 h-5"
-                    />
-                    <span className="text-xs font-medium text-black">RedisVL Semantic Cache</span>
+                    <Database className="w-5 h-5 text-[#DC382D]" />
+                    <span className="text-xs font-medium text-black">Featureform + Redis</span>
                   </a>
                   <a
-                    href="https://github.com/bhavana-giri/movie-recommender-rag-semantic-cache-workshop"
+                    href="https://github.com/bhavana-giri/fraud-detection-featureform-demo"
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackClick('demo-url')}
+                    onClick={() => trackClick('fraud-detection-demo')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Demo Repository"
+                    aria-label="Fraud detection demo repository"
                   >
                     <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
-                    <span className="text-xs font-medium text-black">Demo Repository</span>
+                    <span className="text-xs font-medium text-black">Fraud Detection Demo</span>
                   </a>
                 </div>
               </div>
