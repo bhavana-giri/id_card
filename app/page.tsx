@@ -102,7 +102,7 @@ export default function Home() {
                     <span className="text-xs font-medium text-black">LinkedIn</span>
                   </a>
                   <a
-                    href="https://docs.google.com/presentation/d/107JUeJsgjbw3Ud7hwtUpOfUVby41vyKm/edit?slide=id.p1#slide=id.p1"
+                    href="https://docs.google.com/presentation/d/1HPzLGxLk6M6gV204xPIxwh91qwNvRZniAWcFiAfoFbs"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackClick('fraud-detection-slides')}
@@ -128,7 +128,7 @@ export default function Home() {
                     <span className="text-xs font-medium text-black">Featureform + Redis</span>
                   </a>
                   <a
-                    href="https://github.com/bhavana-giri/fraud-detection-featureform-demo"
+                    href="https://github.com/redis/redis-iris-demos"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackClick('fraud-detection-demo')}
