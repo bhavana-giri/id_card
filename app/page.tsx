@@ -1,6 +1,6 @@
 "use client";
 
-import { Database, Github, Linkedin, Presentation } from "lucide-react";
+import { Github, Linkedin, Presentation } from "lucide-react";
 import Image from "next/image";
 
 async function trackClick(linkId: string) {
@@ -107,36 +107,25 @@ export default function Home() {
                     rel="noopener noreferrer"
                     onClick={() => trackClick('fraud-detection-slides')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Fraud detection slides"
+                    aria-label="Slides"
                   >
                     <Presentation className="w-5 h-5 text-[#F4B400]" fill="#F4B400" />
-                    <span className="text-xs font-medium text-black">Fraud Detection Slides</span>
+                    <span className="text-xs font-medium text-black">Slides</span>
                   </a>
                 </div>
                 
-                {/* Second Row - GitHub Repos */}
+                {/* Second Row - GitHub Repo */}
                 <div className="flex flex-col gap-2.5">
-                  <a
-                    href="https://featureform.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => trackClick('featureform')}
-                    className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Featureform"
-                  >
-                    <Database className="w-5 h-5 text-[#DC382D]" />
-                    <span className="text-xs font-medium text-black">Featureform + Redis</span>
-                  </a>
                   <a
                     href="https://github.com/redis/redis-iris-demos"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackClick('fraud-detection-demo')}
                     className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-                    aria-label="Fraud detection demo repository"
+                    aria-label="Demo repository"
                   >
                     <Github className="w-5 h-5 text-[#181717]" fill="#181717" />
-                    <span className="text-xs font-medium text-black">Fraud Detection Demo</span>
+                    <span className="text-xs font-medium text-black">Demo</span>
                   </a>
                 </div>
               </div>
